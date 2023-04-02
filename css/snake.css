@@ -1,0 +1,58 @@
+body {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+#game-board {
+  width: 290px;
+  height: 290px;
+  border: 5px solid rgb(109, 53, 53);
+}
+
+.snake {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  position: absolute;
+}
+
+.food {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  position: absolute;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.animate-flash {
+  animation: flash 0.5s ease infinite;
+}
+
+@keyframes flash {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
